@@ -6562,6 +6562,8 @@ const _sfc_main$n = {
       }
     },
     replaceEmojiByElement(value) {
+      if(!value) return value;
+      
       let emojiSize;
       if (this.singleLine) {
         emojiSize = 16;
